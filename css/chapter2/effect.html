@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links</title>
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* Order matters */
+        a:link {
+            color: blue; /* Default unvisited link color */
+        }
+
+        a:visited {
+            color: green; /* Visited link color */
+        }
+
+        a:hover {
+            color: red;
+            font-size: 20px; /* Increases size, but causes layout shift */
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/">Google 1</a> <br>
+    <a href="https://www.google.com/">Google 2</a> <br>
+    <a href="https://www.google.com/">Google 3</a> <br>
+</body>
+</html>

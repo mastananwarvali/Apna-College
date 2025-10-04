@@ -1,0 +1,50 @@
+#container{
+    
+    width: 400px;
+    height: 400px;
+    background-color: rgb(242, 248, 248);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+    border:2px solid red;
+}
+
+#container div{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border:2px solid black;
+    border-radius: 12px;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+nav{
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    background-color: pink;
+    font-size: 24px;
+    padding: 0px 10px;
+    font-weight: 600;
+   
+}
+
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20x;
+    
+}

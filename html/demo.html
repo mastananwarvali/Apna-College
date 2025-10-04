@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map with Highlight</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .highlight {
+            position: absolute;
+            background-color: rgba(255, 0, 0, 0.5); /* Red with transparency */
+            pointer-events: none; /* Prevent blocking clicks */
+            border: 2px solid red;
+        }
+        
+        /* Rectangle Highlight */
+        .rect {
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Circle Highlight */
+        .circle {
+            top: 100px;
+            left: 225px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="kabir.jpg" usemap="#map" width="500" height="300">
+        
+        <!-- Highlight Areas -->
+        <div class="highlight rect"></div>
+        <div class="highlight circle"></div>
+    </div>
+
+    <map name="map">
+        <area shape="rect" coords="50,50,150,150" href="https://example.com/location1" alt="Location 1">
+        <area shape="circle" coords="250,150,50" href="https://example.com/location2" alt="Location 2">
+    </map>
+
+</body>
+</html>
